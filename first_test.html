@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>test two</title>
+</head>
+<body>
+	<form>
+		<input type="text" id="txt1" onkeypress="chan()"><br>
+		<input type="text" id="txt2"><br>
+		<input type="number" id="txt3"><br>
+		<button onclick="generate()">click me</button>
+	</form>
+	<script>
+		var  h= prompot
+		if(navigator.geolocation){
+// Horray! Support!
+document.write("yes");
+} else {
+// No support...
+document.write("no");
+}
+		/*
+		const person={
+			fname: 'abdurehman',
+			lname : 'redi',
+			//age:document.getElementById('txt3').textContent,
+			full_info: function(){
+				document.write(this.fname + this.lname);
+			}
+		};
+		*/
+		//var txt_val = document.getElementById('txt1').textContent;
+		//document.write(txt_val);
+		function generate(){
+			for (var i = 1; i <= 10; i++) {
+
+				document.write(i);
+			}
+			document.write("adjadjkjdlak");
+			var f_name = document.getElementById('txt1').textContent;
+			document.write(f_name);
+		}
+		
+		
+	</script>
+
+</body>
+</html>
