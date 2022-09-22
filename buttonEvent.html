@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>First Test</title>
+</head>
+<body>
+	<h1 id="h1_one"></h1>
+	<h1 id="h1_two"></h1>
+	<button onclick="count_val()">click me</button>
+	<script>
+		var count = 0;
+		function count_val(){
+			count = count + 1;
+			document.getElementById('h1_two').textContent = count;
+		}
+		var var_one = 20;
+		var var_two = 30;
+		var h1_value;
+		if(var_one == var_two){
+			h1_value = var_one;
+
+		}else{
+			h1_value=var_two;
+		}
+		document.getElementById('h1_one').textContent = h1_value;
+	</script>
+
+</body>
+</html>
