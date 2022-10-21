@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>
+		
+	</title>
+</head>
+<body>
+	
+		<div class="container">
+			<div><h2>Input hight and width to calculate area</h3></div>
+				<hr>
+			<div class="inputColl">
+				<h3>Width <input class="input" type="number" name="width" id="width" width="20px" /></h3>
+				<h3>Hight <input class="input" type="number" name="hegith" id="hegith"/></h3>
+				<button class="button" onclick="calculate()">Calculate Area</button>
+				
+			</div>
+			<hr>
+			<div class="output"><h3 id="output"></h3>	</div>
+
+			
+		</div>
+
+
+	<script>
+		console.log("getting");
+		function calculate() {
+
+			var hightValue = document.getElementById('width').value;
+			var widhtValue = document.getElementById('width').value;
+			var areaValue = hightValue * widhtValue;
+			console.log(hightValue);
+			document.getElementById('output').innerHTML = "The output is " + areaValue;
+
+			// body...
+		}
+	</script>
+
+</body>
+</html>
