@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>
+		
+	</title>
+</head>
+<body>
+	
+		<div class="container">
+			<div><h3>To calculate GCD Input two numbers (min 2 & max 9)</h3></div>
+				<hr>
+			<div class="inputColl">
+				<h3>First Number <input class="input" type="number" min="2" max="9" name="width" id="width" width="20px" /></h3>
+				<h3>Second Number <input class="input" type="number" min="2" max="9" name="hegith" id="hegith"/></h3>
+				<button class="button" onclick="calculate()">Calculate Area</button>
+				
+			</div>
+			<hr>
+			<div class="output"><h3 id="output"></h3>	</div>
+
+			
+		</div>
+
+
+	<script>
+		console.log("getting");
+		function calculate() {
+
+			var n1 = document.getElementById('width').value;
+			var n2 = document.getElementById('hegith').value;
+			var d = (n1 < n2) ? n1 : n2;
+			for ( ; d >= 1; d--)
+			  if ((n1 % d == 0) && (n2 % d == 0))
+				break;
+			document.getElementById('output').innerHTML = "The GCD is" + d ;
+
+			// body...
+		}
+	</script>
+
+</body>
+</html>
